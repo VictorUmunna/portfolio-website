@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+  </head>
+  <body>
+    <form action="/submit" method="post">
+      <div>
+        <h1>Application Form</h1>
+        <p>Fill in your details</p>
+      </div>
+
+      <div class="">
+        <label for="first-name" id="first-name"
+          >First Name<span style="color: red">*</span></label
+        ><br />
+        <input
+          id="first-name"
+          type="text"
+          placeholder="Enter first name"
+          class="input-box"
+          required
+        /><br /><br />
+      </div>
+
+      <div class="">
+        <label for="last-name" id="last-name"
+          >Last Name<span style="color: red">*</span></label
+        ><br />
+        <input
+          id="last-name"
+          type="text"
+          placeholder="Enter last name"
+          class="input-box"
+          required
+        /><br />
+      </div>
+
+      <div class="gender-label">
+        <p>Gender<span style="color: red">*</span></p>
+        <select id="gender-label" name="gender" class="select-box" required>
+          <br />
+          <option disabled selected value>Enter gender</option>
+          <option value="male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="dob-label">
+        <label for="dob-label" id="dob-label"
+          >Date of Birth<span style="color: red">*</span></label
+        ><br />
+        <input id="date" type="date" class="input-box" required /><br />
+      </div>
+      <br />
+
+      <div class="email-label">
+        <label for="email-label" id="email-label"
+          >Email Address<span style="color: red">*</span></label
+        ><br />
+        <input
+          id="Email"
+          type="email"
+          placeholder="Enter email address"
+          class="input-box"
+          required
+        /><br />
+      </div>
+
+      <div clas="education-label">
+        <p>Education Level<span style="color: red">*</span></p>
+        <select id="dropdown" name="education" class="select-box" required>
+          <option disabled selected value>Select level of education</option>
+          <option value="Bsc">Bsc</option>
+          <option value="Msc">Msc</option>
+          <option value="Diploma">Diploma</option>
+          <option value="Doctorate (PHD)">Doctorate (PHD)</option>
+          <option value="High School/Secondary School">
+            High School/Secondary School
+          </option>
+          <option value="Undergraduate">Undergraduate</option>
+          <option value="Junior/Middle School">Junior/Middle School</option>
+          <option value="Postgraduate">Postgraduate</option>
+        </select>
+      </div>
+
+      <div class="">
+        <p>Country<span style="color: red">*</span></p>
+        <select id="dropdown" name="country" class="select-box" required>
+          <option disbaled selected value>Select your country</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="Albania">Albania</option>
+          <option value="Algeria">Algeria</option>
+          <option value="Antartica">Antarctica</option>
+          <option value="Costa Rica">Costa Rica</option>
+          <option value="Cota D'Ivoire">Cote d'Ivoire</option>
+          <option value="Gabon">Gabon</option>
+          <option value="Gambia">Gambia</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Germany">Germany</option>
+          <option value="Ghana">Ghana</option>
+          <option value="Gibraltar">Gibraltar</option>
+          <option value="Greece">Greece</option>
+          <option value="Greenland">Greenland</option>
+          <option value="Grenada">Grenada</option>
+          <option value="Guadeloupe">Guadeloupe</option>
+          <option value="Malaysia">Malaysia</option>
+          <option value="Maldives">Maldives</option>
+          <option value="Mali">Mali</option>
+          <option value="Malta">Malta</option>
+          <option value="Marshall Islands">Marshall Islands</option>
+          <option value="Martinique">Martinique</option>
+          <option value="Mauritania">Mauritania</option>
+          <option value="Mauritius">Mauritius</option>
+          <option value="Mayotte">Mayotte</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Micronesia">Micronesia, Federated States of</option>
+          <option value="Moldova">Moldova, Republic of</option>
+          <option value="Monaco">Monaco</option>
+          <option value="Mongolia">Mongolia</option>
+          <option value="Montserrat">Montserrat</option>
+          <option value="Morocco">Morocco</option>
+          <option value="Mozambique">Mozambique</option>
+          <option value="Myanmar">Myanmar</option>
+          <option value="Namibia">Namibia</option>
+          <option value="Nauru">Nauru</option>
+          <option value="Nepal">Nepal</option>
+          <option value="Netherlands">Netherlands</option>
+          <option value="Netherlands Antilles">Netherlands Antilles</option>
+          <option value="Niger">Niger</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="Niue">Niue</option>
+          <option value="Norfolk Island">Norfolk Island</option>
+          <option value="Northern Mariana Islands">
+            Northern Mariana Islands
+          </option>
+          <option value="Somalia">Somalia</option>
+          <option value="South Africa">South Africa</option>
+          <option value="South Georgia">
+            South Georgia and the South Sandwich Islands
+          </option>
+          <option value="Span">Spain</option>
+          <option value="SriLanka">Sri Lanka</option>
+          <option value="St. Helena">St. Helena</option>
+          <option value="St. Pierre and Miguelon">
+            St. Pierre and Miquelon
+          </option>
+          <option value="Sudan">Sudan</option>
+          <option value="Suriname">Suriname</option>
+          <option value="Svalbard">Svalbard and Jan Mayen Islands</option>
+          <option value="Swaziland">Swaziland</option>
+          <option value="Serbia">Serbia</option>
+          <option value="Zambia">Zambia</option>
+          <option value="Zimbabwe">Zimbabwe</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="state-label">
+        <label for="state" id="state"
+          >State/City of Residence<span style="color: red">*</span></label
+        ><br />
+        <input
+          id="state"
+          class="input-box"
+          placeholder="Enter your state of residence"
+        /><br />
+      </div>
+
+      <div class="employment-label">
+        <p>Employment Level<span style="color: red">*</span></p>
+        <select id="dropdown" name="employment" class="select-box" required>
+          <option disabled selected value>Select employment status</option>
+          <option value="Employed">Employed</option>
+          <option value="Unemployed">Unemployed</option>
+          <option value="Self-employed">Self-employed</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="number-label">
+        <label for="number" id="number"
+          >Phone Number<span style="color: red">*</span></label
+        ><br />
+        <input
+          name="number"
+          type="number"
+          placeholder="08129643384"
+          class="input-box"
+          required
+        /><br /><br />
+      </div>
+
+      <div class="school-label">
+        <p>Choose School<span style="color: red">*</span></p>
+        <select id="dropdown" name="school" class="select-box" required>
+          <option disabled selected value>Select school</option>
+          <option value="School of Engineering">School of Engineering</option>
+          <option value="School of Data">School of Data</option>
+          <option value="School of Product">School of Product</option>
+        </select>
+      </div>
+
+      <div class="course-label">
+        <p>Choose Course of Study<span style="color: red">*</span></p>
+        <select id="dropdown" name="school" class="select-box" required>
+          <option disabled selected value>Select course</option>
+          <option value="Frontend Engineering">Frontend Engineering</option>
+          <option value="Backend Engineering">Backend Engineering</option>
+          <option value="Cloud Engineering">Cloud Engineering</option>
+        </select>
+      </div>
+
+      <div class="question-label">
+        <p>How did you hear about us?<span style="color: red">*</span></p>
+        <select id="dropdown" name="school" class="select-box" required>
+          <option disabled selected value>How did you hear about us?</option>
+          <option value="Twitter">Twitter</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Linkedin">Linkedin</option>
+          <option value="Youtube">Youtube</option>
+          <option value="Friend">Friend</option>
+          <option value="Google">Google</option>
+          <option value="Billboard">Billboard</option>
+          <option value="Instagram">Instagram</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <br />
+
+      <div class="discount-label">
+        <label for="discount" id="discount"
+          >Scholarship/Discount Code (optional)</label
+        ><br />
+        <input
+          id="discount"
+          type="text"
+          placeholder="Scholarship or student ID or discount codes"
+          class="input-box"
+        /><br />
+      </div>
+
+      <div class="other-label">
+        <p>
+          By clicking continue, I agree to
+          <a href="https://www.altschoolafrica.com/terms" target="_blank"
+            >Terms of Use and acknowledge</a
+          ><br />that I<br />have read the<a
+            href="https://www.altschoolafrica.com/policy"
+            target="_blank"
+            >Privacy Policy</a
+          >.
+        </p>
+      </div>
+
+      <div class="button">
+        <button>Proceed</button>
+      </div>
+
+      <div class="sign-in-label">
+        <p>
+          Already have an account?<a
+            href="https://portal.altschoolafrica.com/auth/login"
+            target="_blank"
+            >Sign In</a
+          >
+        </p>
+      </div>
+    </form>
+  </body>
+</html>
